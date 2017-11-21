@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  player_id: 
+  team: one
+  first_name: MyString
+  last_name: MyString
+  number: 1
+  citizenship: MyString
+  weight: 1
+  height: 1
+
+two:
+  player_id: 
+  team: two
+  first_name: MyString
+  last_name: MyString
+  number: 1
+  citizenship: MyString
+  weight: 1
+  height: 1

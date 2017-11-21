@@ -1,0 +1,22 @@
+<div class="container-fluid home">
+    <div class="container">
+        <h1 class="text-center home-header">
+            Football club manager
+        </h1>
+        <h2 class="home-subheader">
+            Choose table for manipulation:
+        </h2>
+
+        <div class="container home-container">
+            <div class="col-md-4">
+                <%= link_to 'Tournaments', tournaments_path, class: 'button' %>
+            </div>
+            <div class="col-md-4">
+                <%= link_to 'Players', players_path, class: 'button' %>
+            </div>
+            <div class="col-md-4">
+                <%= link_to 'Teams', teams_path, class: 'button' %>
+            </div>
+        </div>
+    </div>
+</div>

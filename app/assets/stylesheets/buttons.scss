@@ -1,0 +1,20 @@
+$button-background: #f0626e;
+
+.button {
+    width: 230px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 20px;
+    background: $button-background;
+    box-shadow: 0 0 5px #000000;
+    color: #ffffff;
+    border-radius: 5px;
+    text-align: center;
+    display: block;
+    box-sizing: border-box;
+
+    &:hover {
+        color: #ffffff;
+        background: darken($button-background, 5%);
+    }
+}

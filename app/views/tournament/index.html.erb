@@ -1,0 +1,30 @@
+<div class="container-fluid tournaments">
+  <div class="container">
+    <div class="col-md-4">
+      <%= link_to 'Create tournament', tournament_new_path %>
+    </div>
+    <div class="col-md-4">
+      <%= link_to 'Back', root_path %>
+    </div>
+  </div>
+  <div class="container tournaments-all">
+    <% if @tournaments %>
+      <% @tournaments.each do |tournament| %>
+        <p>
+          <%= tournament.tournament_name %>
+        </p>
+      <% end %>
+    <% end %>
+  </div>
+  <div class="container tournaments-found">
+    <%= form_tag(tournaments_path, method: :get) do %>
+      <%= text_field_tag :tournament_name %>
+      <%= submit_tag 'Search' %>
+    <% end %>
+    <% if @found_tournaments %>
+      <% @found_tournaments.each do |tournament| %>
+        <%= tournament['tournament_name'] %>
+      <% end %>
+    <% end %>
+  </div>
+</div>

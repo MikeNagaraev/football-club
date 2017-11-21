@@ -1,0 +1,22 @@
+<div class="container">
+	<div class="tournaments-new">
+		<div class="tournaments-new-header">
+			<h1>Create tournament</h1>
+		</div>
+		<%= form_for @tournament,
+			url: create_tournament_path do |f| %>
+			<div class="form-fields">
+				<div class="name-field">
+					<%= f.text_field :tournament_name,
+						placeholder: "Tournament name ...",
+						class: "form-input",
+						required: true %>
+				</div>
+			</div>
+			<div class="button-group">
+				<%= f.submit "Create", class: "btn btn-success" %>
+				<%= link_to 'Back', tournaments_path, class: "btn btn-primary" %>
+			</div>
+		<% end %>
+	</div>
+</div>
