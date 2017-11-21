@@ -1,0 +1,23 @@
+$icon-size: 80px;
+
+.icon {
+    font-size: 3rem;
+    display: block;
+    vertical-align: middle;
+    text-align: center;
+    line-height: $icon-size;
+    width: $icon-size;
+    height: $icon-size;
+
+    &-circle {
+        border-radius: 50%;
+        background: #0028b6;
+        color: #ffffff;
+        border: 1px solid #ffffff;
+
+        &:hover {
+          background: #192e78;
+          color: #ffffff;
+        }
+    }
+}

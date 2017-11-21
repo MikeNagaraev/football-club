@@ -1,7 +1,7 @@
 class Tournament < ApplicationRecord
   def self.search(params)
     if params
-      @found_tournaments = ActiveRecord::Base.connection.execute("SELECT * from tournaments where tournaments.tournament_name = '#{params['tournament_name']}'")
+      @found_tournaments = ActiveRecord::Base.connection.execute("SELECT * from tournaments where tournaments.tournament_name like '#{params['tournament_name']}%'")
       @found_tournaments ? @found_tournaments : nil
     else
       nil

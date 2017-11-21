@@ -1,20 +1,39 @@
-$button-background: #f0626e;
-
 .button {
     width: 230px;
     height: 40px;
     line-height: 40px;
-    font-size: 20px;
-    background: $button-background;
+    font-size: 2rem;
     box-shadow: 0 0 5px #000000;
-    color: #ffffff;
     border-radius: 5px;
     text-align: center;
     display: block;
     box-sizing: border-box;
 
-    &:hover {
+    &-lg {
+        width: 320px;
+        height: 60px;
+        line-height: 60px;
+        font-size: 3rem;
+        border-radius: 10px;
+    }
+
+    &-white {
+        background: #ffffff;
+        color: #000000;
+
+        &:hover {
+            color: #000000;
+            background: darken(#ffffff, 5%);
+        }
+    }
+
+    &-red {
+        background: #f0626e;
         color: #ffffff;
-        background: darken($button-background, 5%);
+
+        &:hover {
+            color: #ffffff;
+            background: darken(#f0626e, 5%);
+        }
     }
 }

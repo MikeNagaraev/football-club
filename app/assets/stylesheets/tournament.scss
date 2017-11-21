@@ -3,4 +3,42 @@
     background: url('tournaments.jpg');
     background-size: cover;
     color: #ffffff !important;
+    font-family: Roboto;
+
+    &-container {
+        margin: 20px auto 0;
+        width: 90%;
+        overflow: hidden;
+    }
+
+    &-button-wrapper {
+        margin-top: 20px;
+    }
+
+    &-header {
+        margin: 20px 0 10px;
+    }
+
+    &-table {
+        overflow: auto;
+        max-height: 500px;
+        width: 400px;
+        background: #192e78;
+        font-size: 2rem;
+
+        tr {}
+
+        td {
+            text-align: center;
+            border: 1px solid #ffffff;
+        }
+    }
+
+    &-form {
+        &-search {
+            border-radius: 5px;
+            background: rgba(#192e78, 0.7);
+            min-height: 100px;
+        }
+    }
 }
